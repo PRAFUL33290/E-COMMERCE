@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@layer utilities {
+  .mandala-bg {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDQF0MvTSJoJdBcpTRBJT3PESQ6kTo2g4rFx9btJ2mIhAKluixiFiH3iUFIFpfTo8kF59QsfoLBldnmCTrJTCVF6aRMQKlN1Z2xGYPEkZE85_uVWyc0sm7P2XxRs8VyHTXjLo84yC6CKyM_F7aXGB3kASxFdZSzTerbZ5xFv5nm5adnUbQC0kAzLw_g5tnCNgnGV-kzvE5HmHXn7qicJyDghoCa_GsvYvZF9D4I-zCYX5otGtsr-EBbum1vToJdI2yDjMzQK6x4OlY);
+    background-repeat: repeat;
+    opacity: 0.03;
+    pointer-events: none;
+  }
+  .mandala-bg-shop {
+    background-image: radial-gradient(circle at 2px 2px, rgba(88, 66, 55, 0.03) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+  .mandala-bg-product {
+    background-image: radial-gradient(circle at 2px 2px, rgba(157, 67, 0, 0.05) 1px, transparent 0);
+    background-size: 32px 32px;
+  }
+  .mandala-bg-category {
+    background-image: radial-gradient(circle at 2px 2px, #e0c0b1 1px, transparent 0);
+    background-size: 48px 48px;
+    opacity: 0.15;
+  }
+  .mandala-bg-contact {
+    background-image: radial-gradient(circle at center, rgba(157, 67, 0, 0.03) 0%, transparent 70%);
+    position: relative;
+  }
+  .mandala-bg-contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBQPCWonqkirTIyezRnbGFBQqLBqFP6Ry8S1hwlj-rdi5VEJR3S37m7z3UoEiNiMK-JYGrnVbwqtP-N9sGkv-BBC7kyguTvxZoepXxEQvAc_K6stmqzk8X4JGB8Eg1zjGoT-iu9Y2t0lpv0GkQpNrICRYV63xKxkkHWvPRXTgg_vGgYluF2p2kmEy9pHVflTBJOV30YgXdPBH7WC5u-w88lUW-MfW1B3NJc9t7WrsjzZ8ErDDCkZQwdODrUAj-AWxlKoMjAEiRhJoo);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
